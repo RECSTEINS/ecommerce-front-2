@@ -41,7 +41,7 @@ const handlePagar = async () => {
           {carrito.map((item) => (
             <div key={item.id} style={styles.item}>
               <img
-                src={`http://localhost:3001${item.imagen}`}
+                src={`https://ecommerce-back-production-e299.up.railway.app${item.imagen}`}
                 alt={item.nombre}
                 style={styles.image}
               />
