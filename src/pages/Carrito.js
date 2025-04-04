@@ -15,7 +15,7 @@ const Carrito = () => {
 const handlePagar = async () => {
   const stripe = await stripePromise;
 
-  const response = await fetch("http://localhost:3001/crear-pago", {
+  const response = await fetch("https://ecommerce-back-production-e299.up.railway.app//crear-pago", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ items: carrito }),
