@@ -15,7 +15,7 @@ const Home = () => {
       window.history.replaceState({}, document.title, newUrl);
     }
 
-    fetch("http://localhost:3001/productos")
+    fetch("https://ecommerce-back-production-e299.up.railway.app/productos")
       .then((res) => res.json())
       .then((data) => setProductos(data))
       .catch((err) => console.error("Error al obtener productos:", err));
