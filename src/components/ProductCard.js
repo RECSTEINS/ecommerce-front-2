@@ -11,7 +11,7 @@ const ProductCard = ({ producto }) => {
 
   // Obtener la ruta principal (de imagenes[] o fallback a imagen)
   const imagenPrincipal = imagenes?.[0]?.src || imagen;
-  const urlImagen = `https://ecommerce-back-production-e299.up.railway.app${imagenPrincipal.startsWith("/") ? "" : "/"}${imagenPrincipal}`;
+  const urlImagen = `https://ambar-bazar-studio.vercel.app/${imagenPrincipal.startsWith("/") ? "" : "/"}${imagenPrincipal}`;
 
   return (
     <div style={styles.card}>

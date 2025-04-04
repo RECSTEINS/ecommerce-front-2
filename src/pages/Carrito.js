@@ -41,7 +41,7 @@ const handlePagar = async () => {
           {carrito.map((item) => (
             <div key={item.id} style={styles.item}>
               <img
-                src={`https://ecommerce-back-production-e299.up.railway.app${item.imagen}`}
+                src={`https://ambar-bazar-studio.vercel.app/${item.imagen}`}
                 alt={item.nombre}
                 style={styles.image}
               />
